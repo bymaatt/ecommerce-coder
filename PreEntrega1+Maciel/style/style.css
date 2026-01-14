@@ -8,8 +8,15 @@
     box-sizing: border-box; 
 }
 /* estilos generales */
+.nav-principal{
+    justify-content: space-between;
+    margin: 10px 30px 10px;
+}
 .nav-items ul{
         list-style: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
     }
     .footer-principal div ul{
         list-style: none;
