@@ -8,23 +8,16 @@
     box-sizing: border-box; 
 }
 /* estilos generales */
-.nav-principal{
-    justify-content: space-between;
-    margin: 10px 30px 10px;
-}
 .nav-items ul{
         list-style: none;
-        display: flex;
-        flex-direction: row;
-        column-gap: 30px;
-    }
-    .footer-principal div ul{
+}
+.footer-principal div ul{
         list-style: none;
-    }
+}
 .footer-principal{
         background-color: black;
         color:white;
-        justify-content: space-between;
+        justify-content: space-around;
         display: flex;
         bottom: 0;
     }
@@ -47,51 +40,183 @@
     .item-4{
         order:3;
     }
+    .menu-6{
+        color:red;
+    }
+    .nav-notifications{
+        display: flex;
+    }
 
 /* desktop */
 @media (min-width: 769px) {
+        .nav-logo img{
+        width: 100px;
+    }
         .nav-principal{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 30px 10px;
+        align-items: center;
     }
-    .nav-items{
+    .nav-container{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        gap:30px;
     }
-       
+    
+    .nav-items ul{
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        list-style: none;
+    }
+    #navbarToggleExternalContent{
+        display: flex !important;
+        align-items: center;
+    }
+    #navbarToggleExternalContent ul {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-hba{
+        display: none;
+    }
+    .nav-notifications{
+        column-gap: 20px;
+        align-items: center;
+    }
+    .nav-notifications img{
+        width: 20px;
+        height: 20px;
+    }
+    .nav-notifications img img{
+        width: 20px;
+    }
+    .footer-principal{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-logo{
+        display: flex;
+        align-items: center;
+    }
+    .footer-logo img{
+        width: 100px;
+    }
+    .footer-items{
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 
 /* mobile */
 @media (max-width: 768px){
+    .nav-logo img{
+        width: 80px;
+    }
+    .nav-notifications{
+        align-items: center;
+        column-gap: 10px;
+    }
+    .nav-notifications img{
+        width: 20px;
+    }
+    .nav-notifications img img{
+        width: 20px;
+    }
+    .footer-logo{
+        display: flex;
+        align-items: center;
+    }
+    .footer-logo img{
+        width: 90px;
+    }
     .nav-principal{
         display: flex;
-        justify-content: space-around;
-        width: 110vw;
-        padding: 20px 0;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 20px 20px;
         border-bottom: 1px solid darkgrey;
     }
+    .nav-container{
+        display: contents;
+    }
+    .menu-hba{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 10%;
+    }
+    #navbarToggleExternalContent {
+        position: fixed;
+        bottom: 70px; 
+        right: 5%;
+        width: auto;
+        background-color: white;
+        border: 1px solid grey;
+        z-index: 99;
+    }
+    #navbarToggleExternalContent ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 20px;
+    }
+    .navbar-toggler{
+        display: block;
+        background-color: transparent;
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 5px 10px;
+    }
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
     .nav-items{
         display: flex;
         position: fixed;
         bottom: 0;
         left:0;
-        padding:20px;
         width: 100vw;
-        background-color: darkgrey;
+        padding:20px 0px 20px;
+        background-color: whitesmoke;
+        border-top:1px solid grey;
         margin:auto;
         z-index: 100;
+        justify-items: center;
     }
     .nav-items ul{
         display: flex;
         flex-direction: row;
-        margin: auto;
-        padding: 0;
+        column-gap: 10px;
+        
     }
     .footer-principal{
         padding-top: 20px;
         padding-bottom:20px;
         margin-bottom: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .footer-items{
+        display: flex;
+        align-items: center;
+    }
+    .footer-logo {
+        display: flex;
+        align-items: center;
     }
     
 }
