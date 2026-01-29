@@ -147,7 +147,7 @@ body {
   .effect-img {
     height: 250px;
     width: 80vw;
-    background-image: url('images/banner-bandera.jpeg');
+    background-image: url('../images/banner-bandera.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center 0%;
@@ -254,15 +254,15 @@ body {
   }
 
   .cat-2 {
-    background-image: url('images/camisa.jpg');
+    background-image: url('../images/camisa.jpg');
   }
 
   .cat-3 {
-    background-image: url('images/vestido.jpg');
+    background-image: url('../images/vestido.jpg');
   }
 
   .cat-4 {
-    background-image: url('images/cartera.jpg');
+    background-image: url('../images/cartera.jpg');
   }
 
   .footer-principal {
