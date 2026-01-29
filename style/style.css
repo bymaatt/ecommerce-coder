@@ -137,6 +137,20 @@ body {
     width: 80vw;
     object-fit: cover;
   }
+  .text-bannerHero{
+    position: absolute;
+    color:white;
+    display: flex;
+    flex-direction: column; 
+    top:40%;
+    left: 10%;
+
+  }
+  .subtitleHero{
+    
+    font-size: 20px;
+    font-weight: 100;
+  } 
 
   .section-banner {
     display: flex;
