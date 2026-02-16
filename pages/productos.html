@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos NOVA - Vestidos, camisas, zapatos y carteras de la colección SS'26.">
+    <meta name="keywords" content="productos, ropa, vestidos, camisas, zapatos, carteras, NOVA, comprar online">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../images/hoja.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -11,31 +13,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <title>Productos</title>
-    <title>Productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Productos | NOVA Clothes</title>
 </head>
 <body>
-    <nav class="nav-principal">
-        <div class="nav-logo">
-            <img src="../images/hoja.png" alt="Logo">
-        </div>
-        <div class="nav-container">
-            <div class="nav-items">
-                <ul>
-                    <li class="menu-1 animate__bounceOut"><a href="../index.html">Home</a></li>
-                    <li class="menu-2 animate__bounceOut"><a href="pages/cuenta.html">Cuenta</a></li>
-                    <li class="menu-3 animate__bounceOut"><a href="productos.html">Productos</a></li>
-                    <li class="menu-hba">
-                        <div class="navbar-dark">
-                            <div class="container-fluid">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </li>     
-                </ul>
+    <header>
+        <nav class="nav-principal" aria-label="Navegación principal">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../images/hoja.png" alt="Logo NOVA Clothes"></a>
             </div>
+            <div class="nav-container">
+                <div class="nav-items">
+                    <ul>
+                        <li class="menu-1 animate__bounceOut"><a href="../index.html">Home</a></li>
+                        <li class="menu-2 animate__bounceOut"><a href="cuenta.html">Cuenta</a></li>
+                        <li class="menu-3 animate__bounceOut"><a href="productos.html" aria-current="page">Productos</a></li>
+                        <li class="menu-hba">
+                            <div class="navbar-dark">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Abrir menú de categorías">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="collapse" id="navbarToggleExternalContent">
                     <ul>
                         <li class="menu-4 animate__bounceOut"><a href="#">Hombre</a></li>
@@ -43,102 +46,105 @@
                         <li class="menu-6 animate__bounceOut"><a href="#">Sale</a></li>
                     </ul>
                 </div>
-        </div>
-        <div class="nav-notifications">
-            <img src="../images/campana.png" alt="notificaciones">
-            <img src="../images/carrito-de-compras.png" alt="cart">
-        </div>
-    </nav>
-    <section class="categories">
-        <div class="cat-1 category-card">
-            <span class="category-name">Zapatos</span>
-        </div>
-        <div class="cat-2 category-card">
-            <span class="category-name">Camisas</span>
-        </div>
-        <div class="cat-3 category-card">
-            <span class="category-name">Vestidos</span>
-        </div>
-        <div class="cat-4 category-card">
-            <span class="category-name">Carteras</span>
-        </div>
-    </section>
-    <section class="banner-principal">
-        <div class="containHero">
-            <img src="../images/hero.jpg" alt="banner">
-            <div class="text-bannerHero">
-                <span class="subtitleHero">SS'26</span>
-                <span class="titleHero">NOVA</span>
-                <span class="subtitleHero">special edition</span>
             </div>
-        </div>
-    </section>
+            <div class="nav-notifications">
+                <img src="../images/campana.png" alt="Notificaciones">
+                <img src="../images/carrito-de-compras.png" alt="Carrito de compras">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="principalTitle">Productos NOVA - Catálogo completo</h1>
+        <section class="categories" aria-label="Categorías de productos">
+            <div class="cat-1 category-card">
+                <span class="category-name">Zapatos</span>
+            </div>
+            <div class="cat-2 category-card">
+                <span class="category-name">Camisas</span>
+            </div>
+            <div class="cat-3 category-card">
+                <span class="category-name">Vestidos</span>
+            </div>
+            <div class="cat-4 category-card">
+                <span class="category-name">Carteras</span>
+            </div>
+        </section>
+        <section class="banner-principal">
+            <div class="containHero">
+                <img src="../images/hero.jpg" alt="Banner colección NOVA SS26">
+                <div class="text-bannerHero">
+                    <span class="subtitleHero">SS'26</span>
+                    <span class="titleHero wave-text"><span>N</span><span>O</span><span>V</span><span>A</span></span>
+                    <span class="subtitleHero1">special edition</span>
+                </div>
+            </div>
+        </section>
 
-    <section id="product-list">
-        <ul class="products-grid">
-            <li class="product-card">
-                <img class="img-card" src="../images/vestido.jpg" alt="vestido de mujer">
-                <h3>Vestido Blanco Lino</h3>
-                <p class="price">$15500</p>
-                <button><span>Agregar al carrito</span></button>
-            </li>
-            <li class="product-card">
-                <img src="../images/camisa.jpg" alt="camisa lino blanca">
-                <h3>Camisa Blanca Lino</h3>
-                <p class="price">$18500</p>
-                <button><span>Agregar al carrito</span></button>
-            </li>
-            <li class="product-card">
-                <img src="../images/zapatosF.png" alt="Zapatos Femeninos">
-                <h3>Zapatos Femeninos verano</h3>
-                <p class="price">$10500</p>
-                <button><span>Agregar al carrito</span></button>
-            </li>
-            <li class="product-card">
-                <img src="../images/camisaLino.png" alt="camisa lino">
-                <h3>Camisa Lino Elegante</h3>
-                <p class="price">$45500</p>
-                <button><span>Agregar al carrito</span></button>
-            </li>
-            <li class="product-card">
-                <img src="../images/cartera.jpg" alt="cartera femenina">
-                <h3>Cartera de Arpillera</h3>
-                <p class="price">$15000</p>
-                <button><span>Agregar al carrito</span></button>
-            </li>
-            <li class="product-card">
-                <img src="../images/pantalon.jpg" alt="Pantalon masculino">
-                <h3>Short corte chino Masculino</h3>
-                <p class="price">$25500</p>
-                <button><span>Agregar al carrito</span></button>
-            </li>
-            <li class="product-card">
-                <img src="../images/vestido2.png" alt="Vestido largo femenino">
-                <h3>Vestido de verano Femenino</h3>
-                <p class="price">$35000</p>
-                <button><span>Agregar al carrito</span></button>
-            </li>
-            <li class="product-card">
-                <img src="../images/zapatos.png" alt="zapatos masculinos">
-                <h3>Zapatos masculinos verano</h3>
-                <p class="price">$100500</p>
-                <button><span>Agregar al carrito </span></button>
-            </li>
-
-        </ul>
-    </section>
+        <section id="product-list">
+            <h2 class="titleSecond">Todos los productos</h2>
+            <ul class="products-grid">
+                <li class="product-card">
+                    <img class="img-card" src="../images/vestido.jpg" alt="Vestido blanco de lino para mujer">
+                    <h3>Vestido Blanco Lino</h3>
+                    <p class="price">$15500</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+                <li class="product-card">
+                    <img src="../images/camisa.jpg" alt="Camisa blanca de lino">
+                    <h3>Camisa Blanca Lino</h3>
+                    <p class="price">$18500</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+                <li class="product-card">
+                    <img src="../images/zapatosF.png" alt="Zapatos femeninos de verano">
+                    <h3>Zapatos Femeninos verano</h3>
+                    <p class="price">$10500</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+                <li class="product-card">
+                    <img src="../images/camisaLino.png" alt="Camisa de lino elegante">
+                    <h3>Camisa Lino Elegante</h3>
+                    <p class="price">$45500</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+                <li class="product-card">
+                    <img src="../images/cartera.jpg" alt="Cartera femenina de arpillera">
+                    <h3>Cartera de Arpillera</h3>
+                    <p class="price">$15000</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+                <li class="product-card">
+                    <img src="../images/pantalon.jpg" alt="Short masculino corte chino">
+                    <h3>Short corte chino Masculino</h3>
+                    <p class="price">$25500</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+                <li class="product-card">
+                    <img src="../images/vestido2.png" alt="Vestido largo femenino de verano">
+                    <h3>Vestido de verano Femenino</h3>
+                    <p class="price">$35000</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+                <li class="product-card">
+                    <img src="../images/zapatos.png" alt="Zapatos masculinos de verano">
+                    <h3>Zapatos masculinos verano</h3>
+                    <p class="price">$100500</p>
+                    <button><span>Agregar al carrito</span></button>
+                </li>
+            </ul>
+        </section>
+    </main>
     <footer class="footer-principal">
         <div class="footer-items">
             <ul>
-                <li class="item-1">Sobre nosotros</li>
+                <li class="item-1"><a href="nosotros.html">Sobre nosotros</a></li>
                 <li class="item-2"><a href="contacto.html">Contactanos</a></li>
                 <li class="item-3">Nuestras redes sociales</li>
-                <li class="item-4">Legales</li>
+                <li class="item-4"><a href="legales.html">Legales</a></li>
             </ul>
         </div>
-        
         <div class="footer-logo">
-            <img src="../images/hoja-bw.svg" alt="Logo-Footer">
+            <a href="../index.html"><img src="../images/hoja-bw.svg" alt="Logo NOVA Footer"></a>
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

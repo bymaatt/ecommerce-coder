@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi cuenta NOVA - Iniciá sesión o registrate para gestionar tus pedidos y datos personales.">
-    <meta name="keywords" content="cuenta, iniciar sesión, registro, mi cuenta, NOVA">
+    <meta name="description" content="Conocé la historia de NOVA - Una marca familiar de moda nacida en Buenos Aires con materiales sustentables y diseño consciente.">
+    <meta name="keywords" content="sobre nosotros, historia NOVA, marca de ropa, moda sustentable, Buenos Aires">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../images/hoja.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,25 +14,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Mi Cuenta | NOVA Clothes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Nosotros | NOVA Clothes</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-principal" aria-label="Navegación principal">
-            <div class="nav-logo">
+            <div class="nav-logo animate__bounceOut">
                 <a href="../index.html"><img src="../images/hoja.png" alt="Logo NOVA Clothes"></a>
             </div>
             <div class="nav-container">
                 <div class="nav-items">
                     <ul>
                         <li class="menu-1 animate__bounceOut"><a href="../index.html">Home</a></li>
-                        <li class="menu-2 animate__bounceOut"><a href="cuenta.html" aria-current="page">Cuenta</a></li>
+                        <li class="menu-2 animate__bounceOut"><a href="cuenta.html">Cuenta</a></li>
                         <li class="menu-3 animate__bounceOut"><a href="productos.html">Productos</a></li>
                         <li class="menu-hba">
                             <div class="navbar-dark">
                                 <div class="container-fluid">
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Abrir menú de categorías">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Abrir menú de categorías">
                                         <span class="navbar-toggler-icon"></span>
                                     </button>
                                 </div>
@@ -47,56 +50,42 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-notifications">
+            <div class="nav-notifications animate__bounceOut">
                 <img src="../images/campana.png" alt="Notificaciones">
                 <img src="../images/carrito-de-compras.png" alt="Carrito de compras">
             </div>
         </nav>
     </header>
     <main>
-        <h1 class="principalTitle">Mi cuenta NOVA</h1>
-        <section class="contact-section">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Mi Cuenta</h2>
-                    <div class="info-item">
-                        <h3>Beneficios</h3>
-                        <p>Accedé a descuentos exclusivos, seguí tus pedidos y gestioná tus datos desde un solo lugar.</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Seguimiento</h3>
-                        <p>Consultá el estado de tus envíos en tiempo real.</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Historial</h3>
-                        <p>Revisá todas tus compras anteriores y repetí tus favoritos.</p>
-                    </div>
+        <h1 class="principalTitle">Sobre NOVA - Nuestra historia</h1>
+        <section class="card-news">
+            <span>"Nacimos para redefinir el estilo de cada temporada. Prendas pensadas para vos, con materiales naturales y diseño consciente."</span>
+        </section>
+        <section class="history">
+            <h2 class="history-title">Nuestra Historia</h2>
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>NOVA nació en 2018 como un proyecto familiar. Martín, con años de experiencia en la industria textil, y su hijo Tomás, con una visión fresca del diseño, decidieron crear algo propio.</p>
+                    <p>Desde un pequeño taller en Buenos Aires, empezaron diseñando piezas para amigos y conocidos. La calidad de los materiales y la atención al detalle hicieron el resto. Lo que comenzó como una idea entre padre e hijo, hoy es una marca que viste a miles de personas en todo el país.</p>
+                    <p>Nuestra filosofía es simple: ropa honesta, hecha con dedicación y pensada para durar.</p>
                 </div>
-
-                <div class="contact-form-wrapper">
-                    <h2>Iniciar sesión</h2>
-                    <form class="contact-form" aria-label="Formulario de inicio de sesión">
-                        <div class="form-group">
-                            <label for="email-cuenta">Email *</label>
-                            <input type="email" id="email-cuenta" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Contraseña *</label>
-                            <input type="password" id="password" name="password" required>
-                        </div>
-                        <button type="submit" class="contact-submit">
-                            <span>Ingresar</span>
-                        </button>
-                    </form>
-                    <p style="margin-top: 1.5rem; color: #444; font-size: 16px;">¿No tenés cuenta? <a href="#" style="color: #7FD4B8; font-weight: 600;">Registrate aquí</a></p>
+                <div class="history-img">
+                    <img src="../images/trabajando.png" alt="Padre e hijo trabajando juntos en el taller de NOVA">
                 </div>
             </div>
+        </section>
+        <section class="callToAction">
+            <span>Vestí lo que sos</span>
+            <a href="productos.html"><span>Explorar Colección</span></a>
+        </section>
+        <section class="finalText">
+            <span>Materiales sustentables · Diseño local · Envío a todo el país</span>
         </section>
     </main>
     <footer class="footer-principal">
         <div class="footer-items">
             <ul>
-                <li class="item-1"><a href="nosotros.html">Sobre nosotros</a></li>
+                <li class="item-1"><a href="nosotros.html" aria-current="page">Sobre nosotros</a></li>
                 <li class="item-2"><a href="contacto.html">Contactanos</a></li>
                 <li class="item-3">Nuestras redes sociales</li>
                 <li class="item-4"><a href="legales.html">Legales</a></li>
@@ -106,6 +95,9 @@
             <a href="../index.html"><img src="../images/hoja-bw.svg" alt="Logo NOVA Footer"></a>
         </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -8,6 +8,10 @@ body {
   font-family: "Alumni Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+.principalTitle {
+  visibility: hidden;
+}
+
 .nav-items ul,
 .footer-principal div ul {
   list-style: none;
@@ -124,6 +128,7 @@ body {
     text-underline-offset: 2px;
   }
   .banner-principal {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,6 +286,9 @@ body {
   }
   .category-card::after {
     left: 100%;
+  }
+  .category-card a {
+    text-decoration: none;
   }
   @keyframes swipeRight {
     100% {
@@ -543,6 +551,191 @@ body {
     text-decoration: underline;
     text-underline-offset: 2px;
   }
+  li.item-1 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  li.item-1 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  li.item-3 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  li.item-3 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  li.item-4 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  li.item-4 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .destacados .titleSecond {
+    width: 80vw;
+    margin: 10px auto;
+  }
+  .legales-section {
+    width: 80vw;
+    margin: 4rem auto;
+  }
+  .legales-section .legales-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #7FD4B8;
+  }
+  .legales-section .legales-block {
+    margin-bottom: 2rem;
+  }
+  .legales-section .legales-block h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.75rem;
+  }
+  .legales-section .legales-block p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+  }
+  .legales-section .legales-block p strong {
+    color: #7FD4B8;
+  }
+  .history {
+    width: 80vw;
+    margin: 4rem auto;
+  }
+  .history .history-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+  .history .history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .history .history-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  .history .history-text p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #000000;
+  }
+  .history .history-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .card-news {
+    width: 60vw;
+    margin: 4rem auto;
+    padding: 2.5rem 3rem;
+    background-color: #f9f9f9;
+    border-left: 5px solid #7FD4B8;
+    border-right: 5px solid #7FD4B8;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .card-news span {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    color: #444;
+    letter-spacing: 0.02rem;
+  }
+  .callToAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80vw;
+    margin: 3rem auto;
+    padding: 4rem 2rem;
+    background-color: #7FD4B8;
+    border-radius: 12px;
+  }
+  .callToAction span:first-child {
+    font-family: "Pacifico";
+    font-size: 42px;
+    color: #ffffff;
+  }
+  .callToAction a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-family: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #ffffff;
+    color: #000000;
+  }
+  .callToAction a span {
+    position: relative;
+    z-index: 10;
+    font-family: "Alumni Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 18px;
+    transition: color 0.4s ease;
+  }
+  .callToAction a:hover span {
+    color: #7FD4B8;
+  }
+  .callToAction a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: #000000;
+    transform: skew(30deg);
+    transition: transform 0.4s ease;
+    z-index: 0;
+  }
+  .callToAction a:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  .finalText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 2rem auto 3rem;
+    padding: 1.5rem 0;
+  }
+  .finalText span {
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 0.15rem;
+    text-align: center;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .nav-principal {
@@ -735,6 +928,91 @@ body {
   .contact-submit:hover::before {
     transform: translate3d(100%, 0, 0);
   }
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .destacados .titleSecond {
+    width: 85vw;
+    margin: 10px auto;
+    font-size: 22px;
+  }
+  #product-list {
+    width: 85vw;
+  }
+  .legales-section {
+    width: 85vw;
+    margin: 3rem auto;
+  }
+  .legales-section .legales-title {
+    font-size: 28px;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+  }
+  .legales-section .legales-block {
+    margin-bottom: 1.5rem;
+  }
+  .legales-section .legales-block h3 {
+    font-size: 18px;
+  }
+  .legales-section .legales-block p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .history {
+    width: 85vw;
+    margin: 3rem auto;
+  }
+  .history .history-title {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+  }
+  .history .history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .history .history-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .history .history-img img {
+    border-radius: 10px;
+  }
+  .card-news {
+    width: 75vw;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+  }
+  .card-news span {
+    font-size: 18px;
+  }
+  .callToAction {
+    width: 85vw;
+    margin: 2.5rem auto;
+    padding: 3rem 1.5rem;
+  }
+  .callToAction span:first-child {
+    font-size: 34px;
+  }
+  .callToAction a {
+    padding: 0.9rem 2rem;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .callToAction a span {
+    font-size: 16px;
+  }
+  .finalText {
+    width: 85vw;
+    margin: 1.5rem auto 2.5rem;
+  }
+  .finalText span {
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+  }
   .footer-logo img {
     width: 40px;
   }
@@ -746,7 +1024,7 @@ body {
   .nav-principal {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     padding: 15px 20px;
     border-bottom: 1px solid darkgrey;
   }
@@ -1175,11 +1453,184 @@ body {
   .footer-items ul li {
     font-size: 13px;
   }
-  li.item-2 a {
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .destacados .titleSecond {
+    width: 90vw;
+    margin: 10px auto;
+    font-size: 20px;
+  }
+  #product-list {
+    width: 90vw;
+    margin: 30px auto;
+    padding-bottom: 80px;
+  }
+  .legales-section {
+    width: 90vw;
+    margin: 2rem auto;
+    padding-bottom: 80px;
+  }
+  .legales-section .legales-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #7FD4B8;
+  }
+  .legales-section .legales-block {
+    margin-bottom: 1.25rem;
+  }
+  .legales-section .legales-block h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.5rem;
+  }
+  .legales-section .legales-block p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+  }
+  .legales-section .legales-block p strong {
+    color: #7FD4B8;
+  }
+  .history {
+    width: 90vw;
+    margin: 2rem auto;
+  }
+  .history .history-title {
+    font-size: 24px;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    color: #000000;
+  }
+  .history .history-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .history .history-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 0.75rem;
+  }
+  .history .history-text p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #000000;
+  }
+  .history .history-img img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .card-news {
+    width: 90vw;
+    margin: 2rem auto;
+    padding: 1.5rem 1.25rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #7FD4B8;
+    border-right: 4px solid #7FD4B8;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .card-news span {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.7;
+    color: #444;
+  }
+  .callToAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 90vw;
+    margin: 2rem auto;
+    padding: 2.5rem 1.25rem;
+    background-color: #7FD4B8;
+    border-radius: 8px;
+  }
+  .callToAction span:first-child {
+    font-family: "Pacifico";
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .callToAction a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #ffffff;
+    color: #000000;
+  }
+  .callToAction a span {
+    position: relative;
+    z-index: 10;
+    font-family: "Alumni Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    transition: color 0.4s ease;
+  }
+  .callToAction a:hover span {
+    color: #7FD4B8;
+  }
+  .callToAction a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: #000000;
+    transform: skew(30deg);
+    transition: transform 0.4s ease;
+    z-index: 0;
+  }
+  .callToAction a:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  .finalText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 1.5rem auto 2rem;
+    padding: 1rem 0;
+    padding-bottom: 80px;
+  }
+  .finalText span {
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 0.08rem;
+    text-align: center;
+  }
+  li.item-1 a,
+  li.item-2 a,
+  li.item-3 a,
+  li.item-4 a {
     color: #ffffff;
     text-decoration: none;
   }
-  li.item-2 a:hover {
+  li.item-1 a:hover,
+  li.item-2 a:hover,
+  li.item-3 a:hover,
+  li.item-4 a:hover {
     text-decoration: underline;
     text-underline-offset: 2px;
   }

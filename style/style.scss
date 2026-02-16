@@ -23,6 +23,9 @@ body {
   min-height: 100vh;
   font-family: $font-body !important;
 }
+.principalTitle{
+  visibility: hidden;
+}
 
 // Estilos generales
 .nav-items ul,
@@ -147,6 +150,7 @@ body {
   }
 
   .banner-principal {
+    position: relative;
     @include flex-center;
 
     img {
@@ -315,6 +319,9 @@ body {
 
     &::after {
       left: 100%;
+    }
+    a{
+      text-decoration: none;
     }
   }
 
@@ -606,9 +613,226 @@ body {
       text-underline-offset: 2px;
     }
   }
+  li.item-1 a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+  li.item-3 a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+  li.item-4 a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+  .destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .titleSecond{
+      width: 80vw;
+      margin: 10px auto;
+
+    }
+  }
+
+  // Legales
+  .legales-section {
+    width: 80vw;
+    margin: 4rem auto;
+
+    .legales-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: $color-black;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 3px solid $color-primary;
+    }
+
+    .legales-block {
+      margin-bottom: 2rem;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: $color-black;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #444;
+
+        strong {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  // History
+  .history {
+    width: 80vw;
+    margin: 4rem auto;
+
+    .history-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: $color-black;
+    }
+
+    .history-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .history-text {
+      p {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #444;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+          font-weight: 600;
+          color: $color-black;
+        }
+      }
+    }
+
+    .history-img {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  // Card News - Blockquote style
+  .card-news {
+    width: 60vw;
+    margin: 4rem auto;
+    padding: 2.5rem 3rem;
+    background-color: #f9f9f9;
+    border-left: 5px solid $color-primary;
+    border-right: 5px solid $color-primary;
+    border-radius: 12px;
+    text-align: center;
+
+    span {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.8;
+      color: #444;
+      letter-spacing: 0.02rem;
+    }
+  }
+
+  // Call to Action
+  .callToAction {
+    @include flex-center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80vw;
+    margin: 3rem auto;
+    padding: 4rem 2rem;
+    background-color: $color-primary;
+    border-radius: 12px;
+
+    span:first-child {
+      font-family: $font-decorative;
+      font-size: 42px;
+      color: $color-white;
+    }
+
+    a {
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-family: inherit;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 0.05rem;
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 500px;
+      overflow: hidden;
+      background: $color-white;
+      color: $color-black;
+
+      span {
+        position: relative;
+        z-index: 10;
+        font-family: $font-body;
+        font-size: 18px;
+        @include transition(color, 0.4s);
+      }
+
+      &:hover span {
+        color: $color-primary;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        background: $color-black;
+        transform: skew(30deg);
+        @include transition(transform, 0.4s);
+        z-index: 0;
+      }
+
+      &:hover::before {
+        transform: translate3d(100%, 0, 0);
+      }
+    }
+  }
+
+  // Final Text
+  .finalText {
+    @include flex-center;
+    width: 80vw;
+    margin: 2rem auto 3rem;
+    padding: 1.5rem 0;
+
+    span {
+      font-size: 16px;
+      color: #999;
+      letter-spacing: 0.15rem;
+      text-align: center;
+    }
+  }
+
 }
 
-// Tablet
 // Tablet
 @media (min-width: 769px) and (max-width: $tablet) {
   .nav-principal {
@@ -829,6 +1053,112 @@ body {
     }
   }
 
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .titleSecond {
+      width: 85vw;
+      margin: 10px auto;
+      font-size: 22px;
+    }
+  }
+
+  #product-list {
+    width: 85vw;
+  }
+
+  .legales-section {
+    width: 85vw;
+    margin: 3rem auto;
+
+    .legales-title {
+      font-size: 28px;
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .legales-block {
+      margin-bottom: 1.5rem;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .history {
+    width: 85vw;
+    margin: 3rem auto;
+
+    .history-title {
+      font-size: 28px;
+      margin-bottom: 1.5rem;
+    }
+
+    .history-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .history-text p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .history-img img {
+      border-radius: 10px;
+    }
+  }
+
+  .card-news {
+    width: 75vw;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .callToAction {
+    width: 85vw;
+    margin: 2.5rem auto;
+    padding: 3rem 1.5rem;
+
+    span:first-child {
+      font-size: 34px;
+    }
+
+    a {
+      padding: 0.9rem 2rem;
+      font-size: 16px;
+      text-decoration: none;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .finalText {
+    width: 85vw;
+    margin: 1.5rem auto 2.5rem;
+
+    span {
+      font-size: 15px;
+      letter-spacing: 0.1rem;
+    }
+  }
+
   .footer-logo img {
     width: 40px;
   }
@@ -843,7 +1173,7 @@ body {
   .nav-principal {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     padding: 15px $spacing-medium;
     border-bottom: 1px solid darkgrey;
   }
@@ -1320,7 +1650,199 @@ body {
     }
   }
 
-  li.item-2 a {
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .titleSecond {
+      width: 90vw;
+      margin: 10px auto;
+      font-size: 20px;
+    }
+  }
+
+  #product-list {
+    width: 90vw;
+    margin: $spacing-large auto;
+    padding-bottom: 80px;
+  }
+
+  .legales-section {
+    width: 90vw;
+    margin: 2rem auto;
+    padding-bottom: 80px;
+
+    .legales-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: $color-black;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid $color-primary;
+    }
+
+    .legales-block {
+      margin-bottom: 1.25rem;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $color-black;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #444;
+
+        strong {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .history {
+    width: 90vw;
+    margin: 2rem auto;
+
+    .history-title {
+      font-size: 24px;
+      margin-bottom: 1.25rem;
+      font-weight: 700;
+      color: $color-black;
+    }
+
+    .history-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .history-text p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 0.75rem;
+
+      &:last-child {
+        margin-bottom: 0;
+        font-weight: 600;
+        color: $color-black;
+      }
+    }
+
+    .history-img img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  .card-news {
+    width: 90vw;
+    margin: 2rem auto;
+    padding: 1.5rem 1.25rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid $color-primary;
+    border-right: 4px solid $color-primary;
+    border-radius: 8px;
+    text-align: center;
+
+    span {
+      font-size: 15px;
+      font-style: italic;
+      line-height: 1.7;
+      color: #444;
+    }
+  }
+
+  .callToAction {
+    @include flex-center;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 90vw;
+    margin: 2rem auto;
+    padding: 2.5rem 1.25rem;
+    background-color: $color-primary;
+    border-radius: 8px;
+
+    span:first-child {
+      font-family: $font-decorative;
+      font-size: 28px;
+      color: $color-white;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-family: inherit;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 0.05rem;
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: 500px;
+      overflow: hidden;
+      background: $color-white;
+      color: $color-black;
+
+      span {
+        position: relative;
+        z-index: 10;
+        font-family: $font-body;
+        font-size: 15px;
+        @include transition(color, 0.4s);
+      }
+
+      &:hover span {
+        color: $color-primary;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        background: $color-black;
+        transform: skew(30deg);
+        @include transition(transform, 0.4s);
+        z-index: 0;
+      }
+
+      &:hover::before {
+        transform: translate3d(100%, 0, 0);
+      }
+    }
+  }
+
+  .finalText {
+    @include flex-center;
+    width: 90vw;
+    margin: 1.5rem auto 2rem;
+    padding: 1rem 0;
+    padding-bottom: 80px;
+
+    span {
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 0.08rem;
+      text-align: center;
+    }
+  }
+
+  li.item-1 a,
+  li.item-2 a,
+  li.item-3 a,
+  li.item-4 a {
     color: $color-white;
     text-decoration: none;
 
